@@ -5,11 +5,12 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.skeleton.config.testconfig.TestConfiguration;
+import com.skeleton.util.ExcelSheet;
+import com.skeleton.util.ExcelSheet.SheetName;
+
 import selenium.page.CardsPage;
 import selenium.page.PersonalPage;
-import seleniumUtil.ExcelSheet;
-import seleniumUtil.TestConfiguration;
-import seleniumUtil.ExcelSheet.SheetName;
 
 public class CardComparison extends TestConfiguration{
 

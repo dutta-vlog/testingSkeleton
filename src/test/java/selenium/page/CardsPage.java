@@ -2,7 +2,8 @@ package selenium.page;
 
 import java.util.List;
 import org.openqa.selenium.By;
-import seleniumUtil.ScriptController;
+
+import com.skeleton.config.testconfig.ScriptController;
 
 public class CardsPage extends MasterPage{
 

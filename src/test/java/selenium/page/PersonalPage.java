@@ -2,7 +2,7 @@ package selenium.page;
 
 import org.openqa.selenium.By;
 
-import seleniumUtil.ScriptController;
+import com.skeleton.config.testconfig.ScriptController;
 
 public class PersonalPage extends MasterPage{
 
@@ -22,9 +22,6 @@ public class PersonalPage extends MasterPage{
 		webDriverUtility.clickElement(xpath);
 	}
 
-	public void expandSideMobileMenu() {
-		By expandMobileMenuButton = By.id("btnHamburger");
-		webDriverUtility.clickElement(expandMobileMenuButton);
-	}
+	
 
 }

@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="DBS Credit Card">
-	 <listeners>
-        <listener class-name="seleniumUtil.MyCustomListner"/>
+
+ <suite name="DBS Credit Card">
+	<listeners>
+        <listener class-name="com.skeleton.config.listeners.MyCustomListener"/>
     </listeners>
 	<test name="Credit card comparison">
 		<classes>
 			<class name="selenium.tests.dbsCard.CardComparison" />
 		</classes>
 	</test> 
-	
+</suite>
+
+<!--
+<suite name="Mobile Native APP automation">
+	<listeners>
+        <listener class-name="com.skeleton.config.listeners.MyCustomListener"/>
+    </listeners>
+	<test name="Play store Automation">
+		<classes>
+			<class name="mobile.nativeapptest.PlayStoreTest" />
+		</classes>
+	</test> 
 </suite> 
+
+ --> 
