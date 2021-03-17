@@ -7,10 +7,14 @@ import com.skeleton.config.settings.ApplicationPlatformSettings.MobileType;
 import com.skeleton.config.settings.ApplicationPlatformSettings.PlatformType;
 import com.skeleton.util.PropertyFile;
 
-
+/**
+ * TestNg test configuration
+ * @author Gour_Dutta
+ *
+ */
 public class TestConfiguration {
 
-	public static final ScriptController scriptController = new ScriptController();	
+	public static final ScriptController scriptController = ScriptController.getInstance();	
 	public static final MobileType MOBILE_TYPE=MobileType.valueOf(PropertyFile.getInstance().getValueOf("mobile"));
 	public static final PlatformType PLATFORM=PlatformType.valueOf(PropertyFile.getInstance().getValueOf("platform"));
 	

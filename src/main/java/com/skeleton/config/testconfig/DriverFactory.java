@@ -7,12 +7,14 @@ import com.skeleton.exceptions.CustomException;
 import com.skeleton.util.PropertyFile;
 
 public class DriverFactory {
+    
+    private DriverFactory() {
+    }
 
-	public static DriverManager driverManager = null;
-	
 	public static DriverManager createDriverManager() throws CustomException {
 
 		PlatformType platform=PlatformType.valueOf(PropertyFile.getInstance().getValueOf("platform"));
+		DriverManager driverManager ;
 
 		switch(platform) {
 		case WEB:

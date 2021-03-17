@@ -23,13 +23,13 @@ public class CardComparison extends TestConfiguration{
 	@Test(priority=0)
 	public void clickOnCard() {
 		excel = new ExcelSheet().setTestCaseName(this.getClass().getSimpleName());
-		personalPage = new PersonalPage(scriptController);
+		personalPage = new PersonalPage();
 		personalPage.clickOnCardMenu();
 	}
 	
 	@Test(priority=1)
 	public void clickCreditCard()  {
-		cardsPage = new CardsPage(scriptController);
+		cardsPage = new CardsPage();
 		cardsPage.clickOnCreditCard();
 	}
 	

@@ -9,16 +9,25 @@ import com.skeleton.reports.Reports;
 import com.skeleton.reports.Screenshot;
 
 public class ScriptController {
+    
+    private static final Reports report = new Reports();
+    private static final Log4j log4j = new Log4j();
+    private static final ScriptController SCRIPT_CONTROLLER = new ScriptController();
 
-	private static DriverManager driverManager;
-	private static WebDriver driver;
-	private static WebDriverUtility webDriverUtility;
-	private static Screenshot screenshotInstace;
-	private static final Reports report = new Reports();
-	private static final Log4j log4j = new Log4j();
-	private static MobileDriverUtility mobileDriverUtility;
+	private WebDriver driver;
+	private WebDriverUtility webDriverUtility;
+	private Screenshot screenshotInstace;
+	private MobileDriverUtility mobileDriverUtility;
+	
+	private ScriptController() {
+	}
+	
+	public static ScriptController getInstance() {
+	    return SCRIPT_CONTROLLER;
+	}
 
 	public void launchDriver() throws Exception {
+	    DriverManager driverManager;
 		driverManager = DriverFactory.createDriverManager();
 		driver = driverManager.createDriver();
 	}

@@ -3,16 +3,9 @@ package selenium.page;
 import java.util.List;
 import org.openqa.selenium.By;
 
-import com.skeleton.config.testconfig.ScriptController;
-
 public class CardsPage extends MasterPage{
 
 	private By cardCompareButton = By.xpath("//button[@id='cardCompareBtn']");
-
-	public CardsPage(ScriptController scriptController) {
-		this.driver = scriptController.getWebDriver();
-		this.webDriverUtility = scriptController.getWebDriverUtility();
-	}
 
 	private By createXpathForCheckBoxCompareForCard(String cardName) {
 		return By.xpath("//div[text()='"+cardName+"']//ancestor::div[@class='cardContainer']//label[@class='compare-label']");

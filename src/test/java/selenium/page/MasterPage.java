@@ -2,7 +2,7 @@ package selenium.page;
 
 import org.openqa.selenium.By;
 
-import com.skeleton.Utility;
+import selenium.utility.Utility;
 
 public class MasterPage extends Utility{
 

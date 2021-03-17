@@ -2,14 +2,7 @@ package selenium.page;
 
 import org.openqa.selenium.By;
 
-import com.skeleton.config.testconfig.ScriptController;
-
 public class PersonalPage extends MasterPage{
-
-	public PersonalPage(ScriptController scriptController) {
-		this.driver = scriptController.getWebDriver();
-		this.webDriverUtility = scriptController.getWebDriverUtility();
-	}
 
 	public void clickOnCardMenu() {
 		By xpath = null;
@@ -22,6 +15,5 @@ public class PersonalPage extends MasterPage{
 		webDriverUtility.clickElement(xpath);
 	}
 
-	
 
 }
